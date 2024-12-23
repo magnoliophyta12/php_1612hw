@@ -1,0 +1,11 @@
+{
+    "name": "home/1612hw",
+    "authors": [
+        {
+            "name": "flowermaiden",
+            "email": ""
+        }
+    ],
+    "require": {},
+    "autoload": {  "psr-4": {    "App\\": "src/"  }}
+}

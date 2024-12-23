@@ -9,9 +9,9 @@ function convertToHTML($control)
 {
     if ($control instanceof Button) {
         return "<button style='background: {$control->getBackground()}; width:{$control->getWidth()}; height:{$control->getHeight()}; name='{$control->getName()}'>  {$control->getValue()} </button>";
-    } elseif ($control instanceof Text) {
+    } else if ($control instanceof Text) {
         return  "<input type='text' style='background: {$control->getBackground()}; width: {$control->getWidth()}; height: {$control->getHeight()};' name='{$control->getName()}' value='{$control->getValue()}' placeholder='{$control->getPlaceholder()}'>";
-    } elseif ($control instanceof Label) {
+    } else if ($control instanceof Label) {
         return "<label for='{$control->getParentName()}' style='background: {$control->getBackground()}; width: {$control->getWidth()}; height: {$control->getHeight()};'> {$control->getParentName()} </label>";
     }
 }
